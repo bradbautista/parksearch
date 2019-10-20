@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Park Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container container_form">
+
+        <h1>Where would you like to vacation?</h1>
+
+        <form id="js-form">
+
+            <fieldset class="states-grid">
+                <legend>Please select one or more states</legend>
+
+                <div class="states-column">
+                    <label><input type="checkbox" id="AL">Alabama</label><br> 
+                    <label><input type="checkbox" id="AK">Alaska</label><br> 
+                    <label><input type="checkbox" id="AZ">Arizona</label><br> 
+                    <label><input type="checkbox" id="AR">Arkansas</label><br> 
+                    <label><input type="checkbox" id="CA">California</label><br>
+                    <label><input type="checkbox" id="CO">Colorado</label><br> 
+                    <label><input type="checkbox" id="CT">Connecticut</label><br> 
+                    <label><input type="checkbox" id="DE">Delaware</label><br> 
+                    <label><input type="checkbox" id="DC">D.C.</label><br> 
+                    <label><input type="checkbox" id="FL">Florida</label><br>
+                    <label><input type="checkbox" id="GA">Georgia</label><br>
+                    <label><input type="checkbox" id="HI">Hawaii</label><br> 
+                    <label><input type="checkbox" id="ID">Idaho</label><br> 
+                    <label><input type="checkbox" id="IL">Illinois</label><br> 
+                    <label><input type="checkbox" id="IN">Indiana</label><br> 
+                    <label><input type="checkbox" id="IA">Iowa</label><br> 
+                    <label><input type="checkbox" id="KS">Kansas</label><br> 
+                    <label><input type="checkbox" id="KY">Kentucky</label><br> 
+                    <label><input type="checkbox" id="LA">Louisiana</label><br> 
+                    <label><input type="checkbox" id="ME">Maine</label><br>
+                    <label><input type="checkbox" id="MD">Maryland</label><br>
+                    <label><input type="checkbox" id="MA">Massachusetts</label><br> 
+                    <label><input type="checkbox" id="MI">Michigan</label><br> 
+                    <label><input type="checkbox" id="MN">Minnesota</label><br> 
+                    <label><input type="checkbox" id="MS">Mississippi</label><br> 
+                    <label><input type="checkbox" id="MO">Missouri</label><br>  
+                </div>
+
+                <div class="states-column">
+                    <label><input type="checkbox" id="MT">Montana</label><br> 
+                    <label><input type="checkbox" id="NE">Nebraska</label><br> 
+                    <label><input type="checkbox" id="NV">Nevada</label><br> 
+                    <label><input type="checkbox" id="NH">New Hampshire</label><br>
+                    <label><input type="checkbox" id="NJ">New Jersey</label><br>
+                    <label><input type="checkbox" id="NM">New Mexico</label><br> 
+                    <label><input type="checkbox" id="NY">New York</label><br> 
+                    <label><input type="checkbox" id="NC">North Carolina</label><br>
+                    <label><input type="checkbox" id="ND">North Dakota</label><br> 
+                    <label><input type="checkbox" id="OH">Ohio</label><br> 
+                    <label><input type="checkbox" id="OK">Oklahoma</label><br> 
+                    <label><input type="checkbox" id="OR">Oregon</label><br> 
+                    <label><input type="checkbox" id="PA">Pennsylvania</label><br> 
+                    <label><input type="checkbox" id="RI">Rhode Island</label><br>
+                    <label><input type="checkbox" id="SC">South Carolina</label><br>
+                    <label><input type="checkbox" id="SD">South Dakota</label><br> 
+                    <label><input type="checkbox" id="TN">Tennessee</label><br> 
+                    <label><input type="checkbox" id="TX">Texas</label><br> 
+                    <label><input type="checkbox" id="UT">Utah</label><br> 
+                    <label><input type="checkbox" id="VT">Vermont</label><br> 
+                    <label><input type="checkbox" id="VA">Virginia</label><br> 
+                    <label><input type="checkbox" id="WA">Washington</label><br> 
+                    <label><input type="checkbox" id="WV">West Virginia</label><br> 
+                    <label><input type="checkbox" id="WI">Wisconsin</label><br> 
+                    <label><input type="checkbox" id="WY">Wyoming</label>
+                </div>
+
+                </fieldset>
+
+                <label for="js-max-results">Maximum results to return</label>
+                <input type="number" name="js-max-results" id="js-max-results" value="10" min="1" max="50">
+                <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <div class="container container_results">
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+          <h2>Search results</h2>
+          <ul id="results-list">
+          </ul>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
